@@ -1,1 +1,127 @@
 /* Codecademy Intensive Pro "Build Websites From Scratch": Unit 8, Capstone Project. Submission by P.Mroz. */
+html {
+  font-size: 16px;
+  font-family: sans-serif;
+  color:rgb(74, 74, 74);
+}
+
+.site-container {
+  width:960px;
+  min-width: 690px;
+  margin: 0px auto 0px auto;
+}
+
+h1 {
+  font-size: 2.0rem;
+  font-weight: bold;
+}
+
+h2 {
+
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+/*** DESKTOP SCREEN ***/
+
+/*------------ Header Section ------------*/
+header{
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  width: 100%;
+  position:fixed;
+  z-index: 20;
+}
+
+.header-left {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  height: 32px;
+  padding-left: 24px;
+}
+.header-left img {
+  height: 100%;
+  width: auto;
+  padding-right: 2px;
+}
+.header-left .logo-text-1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+.header-left .logo-text-2 {
+  font-weight: 100;
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  color:rgb(155, 155, 155);
+}
+
+.header-right nav{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 32px;
+  padding-right: 24px;
+}
+.nav-entry {
+  padding-left: 16px;
+  line-height: 1.8;
+  transition: text-decoration 75ms ease-in;
+}
+.nav-entry:hover {
+  text-decoration: underline;
+}
+
+/*------------ First Content Section ------------*/
+#section-1 {
+  background-color: rgb(216, 216, 216);
+  width: 100%;
+  display: flex;
+  justify-content: left;
+}
+
+#section-1 .site-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+}
+.lg-image-container {
+  width: 60%;
+  height: auto;
+  margin: 32px 24px;
+}
+.lg-image-container img {
+  width:100%;
+}
+.side-container {
+  width: 30%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.side-container h3 {
+  margin: 24px 0px;
+}
+.side-container .button-text{
+  background-color:rgb(74, 74, 74);
+  color: rgb(216, 216, 216);
+  width: 100%;
+  padding: 8px 0px;
+  text-align: center;
+  transition: background-color 150ms ease-in;
+}
+
+.side-container .button-text:hover{
+  background-color:rgb(55, 182, 238);
+}
