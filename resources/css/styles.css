@@ -34,6 +34,17 @@ html {
   color:rgb(74, 74, 74);
 }
 
+.section-background{
+  background-color: rgb(216, 216, 216);
+  width: 100%;
+  display: flex;
+  position: static;
+}
+.section-background:nth-child(2n+1){
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  display: flex;
+}
 .site-container {
   width:1200px;
   min-width: 690px;
@@ -42,7 +53,11 @@ html {
   display: flex;
   justify-content: flex-start;
 }
-
+body{
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 h1 {
   font-size: 2.0rem;
   font-weight: 800;
@@ -125,12 +140,13 @@ header{
   display:none;
 }
 /*------------ First Content Section ------------*/
-#section-1 {
-  background-color: rgb(216, 216, 216);
+/*#section-1 {
+  /*background-color: rgb(216, 216, 216);
   width: 100%;
   display: flex;
   justify-content: left;
-}
+  position: static;
+}*/
 
 #section-1 .site-container{
   margin-top: 64px;
@@ -167,20 +183,20 @@ header{
 }
 
 /*------------ Second Content Section ------------*/
-#section-2 {
-  background-color: rgb(255, 255, 255);
+/*#section-2 {
+  /*background-color: rgb(255, 255, 255);
   width: 100%;
   display: flex;
-  justify-content: left;
-  position: absolute;
-}
+  position: static;
+  z-index: 10;
+}*/
 
 #section-2 .site-container .side-container{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   border-left: 2px solid rgb(224, 224, 224);
-  margin: 16px 0px 32px 24px;
+  margin: 16px 0px 16px 24px;
 }
 #section-2 .site-container .feature-container{
   width: 60%;
@@ -211,6 +227,7 @@ header{
   justify-content: flex-start;
   align-items: center;
   border-bottom: 2px solid rgb(224, 224, 224);
+  padding-right: 50px;
 }
 
 .side-container .entry-container:last-child {
@@ -243,4 +260,92 @@ header{
 }
 .read-more:hover{
   font-weight: 600;
+}
+
+/*------------ Third Content Section ------------*/
+
+/*#section-3 {
+  /*background-color: rgb(216, 216, 216);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: static;
+  z-index: 5;
+}*/
+
+#section-3 .site-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px 72px;
+  margin: 0px auto 32px auto;
+}
+#section-3 .site-container h2 {
+  margin: 32px 0px 16px 0px;
+}
+
+.all-course-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.course-container{
+  background-color: rgb(255, 255, 255);
+  width: 30%;
+  height: auto;
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-pic-container{
+  width: 100%;
+  height: auto;
+}
+
+.course-text-container{
+  width: 85%;
+  justify-content: flex-start;
+  margin: 16px 0px 24px 16px;
+}
+
+.course-text-container h3{
+  width: 75%;
+  justify-content: flex-start;
+  margin-bottom: 8px;
+}
+
+.course-detail {
+  color: rgb(118, 118, 118);
+  line-height: 1.3;
+  padding: 8px 0px;
+}
+
+/*------------ Fourth Content Section ------------*/
+/*#section-4 {
+  /*background-color: rgb(216, 216, 216);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: static;
+  z-index: 1;
+  /*margin-top:1700px;*/
+}
+
+#section-4 .site-container .side-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-left: 2px solid rgb(224, 224, 224);
+  margin: 16px 0px 16px 24px;
+}
+#section-4 .site-container .feature-container{
+  width: 60%;
+  height: auto;
+  margin: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
