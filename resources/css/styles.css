@@ -60,7 +60,44 @@ img {
   width:100%;
 }
 
+video {
+  border: 3px solid rgb(205,205,205);
+}
+
+/*** DESKTOP SCREEN ***/
+
 /*--- Classes Used in Multiple Sections ---*/
+.copyright, .legal-text, .feature-container .citation {
+  font-family: Arial, serif;
+  font-size: 0.8rem;
+}
+.entry-pic-container {
+  width: 35%;
+  height: auto;
+  margin: 16px;
+}
+.entry-text-container {
+  width: 65%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.entry-text-container h3{
+  margin:8px 0px;
+}
+.entry-detail {
+  line-height: 1.2;
+  padding-bottom: 8px;
+}
+.feature-container h2{
+  margin: 32px 0px 24px 0px;
+}
+.feature-container p {
+  width: 100%;
+  line-height: 1.5;
+}
 .section-background{
   background-color: rgb(216, 216, 216);
   width: 100%;
@@ -101,7 +138,8 @@ img {
 .subsection-header{
   margin: 32px 0px 16px 0px;
 }
-/*** DESKTOP SCREEN ***/
+
+
 
 /*------------ Header Section ------------*/
 header{
@@ -204,13 +242,6 @@ header{
 
 /*------------ Second Content Section ------------*/
 
-/*#section-2 .site-container .side-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  border-left: 2px solid rgb(224, 224, 224);
-  margin: 16px 0px 16px 24px;
-}*/
 #section-2 .site-container .feature-container{
   width: 60%;
   height: auto;
@@ -220,45 +251,18 @@ header{
   justify-content: space-between;
 }
 
-.feature-container h2{
-  margin: 32px 0px 24px 0px;
-}
-.feature-container p {
-  width: 100%;
-  line-height: 1.5;
-}
-.feature-container .citation {
-  font-family: Arial, serif;
-  font-size: 0.8rem;
-  margin: 32px 0px;
-}
 
 #section-2 .site-container .selection-container .entry-container:last-child {
   background-color: rgb(216, 216, 216);
 }
 
-.entry-pic-container {
-  width: 35%;
-  height: auto;
-  margin: 16px;
-}
-.entry-text-container {
-  width: 65%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-.entry-text-container h3{
-  margin:8px 0px;
-}
-.entry-detail {
-  line-height: 1.2;
+.feature-container .citation {
+  color: rgb(255, 255, 255);
+  margin: 32px 0px;
 }
 .read-more{
   color: rgb(74, 144, 226);
-  margin: 8px 0px;
+  margin-bottom: 8px;
   transition: font-weight 100ms ease-in-out;
 }
 .read-more:hover{
@@ -320,26 +324,59 @@ header{
 
 /*------------ Fourth Content Section ------------*/
 
-
-#section-4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
 #section-4 .site-container .feature-container{
   width: 60%;
   height: auto;
-  margin: 32px 24px;
+  margin: 32px 0px 32px 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+#section-4 h3{
+  margin: 24px 0px 8px 0px;
+}
+
+#section-4 .entry-detail, #section-4 .quote {
+  color: rgb(118,118,118);
+}
+
 #section-4 .site-container .selection-container{
+  border: none;
+  margin-top: 32px
+}
+
+#section-4 .site-container .selection-container .entry-container {
   border: none;
 }
 
 #section-4 .site-container .selection-container .entry-container:first-child {
   background-color: rgb(216, 216, 216);
+}
+
+/*------------ Footer Content Section ------------*/
+
+footer {
+  width: 100%;
+  border-top: 2px solid rgb(224, 224, 224);
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.copyright {
+  color: rgb(118,118,118);
+  margin: 16px 0px 64px 24px;
+  line-height: 1.5;
+}
+
+.legal-menu{
+  display: inline-block;
+  margin: 16px 24px 64px 0px;
+}
+.legal-menu .legal-text {
+  color: rgb(118,118,118);
+  padding-left: 8px;
+  line-height: 1.5;
 }
