@@ -67,6 +67,7 @@ video {
 /*** DESKTOP SCREEN ***/
 
 /*--- Classes Used in Multiple Sections ---*/
+
 .copyright, .legal-text, .feature-container .citation {
   font-family: Arial, serif;
   font-size: 0.8rem;
@@ -90,6 +91,7 @@ video {
 .entry-detail {
   line-height: 1.2;
   padding-bottom: 8px;
+  padding-right: 16px;
 }
 .feature-container h2{
   margin: 32px 0px 24px 0px;
@@ -132,16 +134,14 @@ video {
   justify-content: flex-start;
   align-items: center;
   border-bottom: 2px solid rgb(224, 224, 224);
-  padding-right: 32px;
+  /*padding-right: 32px;*/
 }
-
 .subsection-header{
   margin: 32px 0px 16px 0px;
 }
 
-
-
 /*------------ Header Section ------------*/
+
 header{
   display: flex;
   background-color: rgb(255, 255, 255);
@@ -152,7 +152,6 @@ header{
   position:fixed;
   z-index: 20;
 }
-
 .header-left {
   display: flex;
   justify-content: flex-start;
@@ -178,7 +177,6 @@ header{
   font-size: 1.2rem;
   color:rgb(155, 155, 155);
 }
-
 .header-right nav{
   display: flex;
   justify-content: space-between;
@@ -199,6 +197,7 @@ header{
 .nav-icon{
   display:none;
 }
+
 /*------------ First Content Section ------------*/
 
 #section-1 .site-container{
@@ -209,7 +208,6 @@ header{
   height: auto;
   margin: 32px 24px;
 }
-
 .side-container {
   width: 40%;
   height: auto;
@@ -218,11 +216,9 @@ header{
   justify-content: center;
   align-items: flex-start;
 }
-
 .side-container h1 {
   width: 75%;
 }
-
 .side-container h3 {
   margin: 24px 0px;
   width: 75%;
@@ -235,7 +231,6 @@ header{
   text-align: center;
   transition: background-color 150ms ease-in;
 }
-
 .side-container .button-text:hover{
   background-color:rgb(74, 144, 226);
 }
@@ -250,12 +245,9 @@ header{
   flex-direction: column;
   justify-content: space-between;
 }
-
-
 #section-2 .site-container .selection-container .entry-container:last-child {
   background-color: rgb(216, 216, 216);
 }
-
 .feature-container .citation {
   color: rgb(255, 255, 255);
   margin: 32px 0px;
@@ -268,9 +260,11 @@ header{
 .read-more:hover{
   font-weight: 600;
 }
+.mobile-pic {
+  display:none;
+}
 
 /*------------ Third Content Section ------------*/
-
 
 #section-3 .site-container {
   display: flex;
@@ -283,13 +277,11 @@ header{
 #section-3 .site-container h2 {
   margin: 32px 0px 16px 0px;
 }
-
 .all-course-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-
 .course-container{
   background-color: rgb(255, 255, 255);
   width: 30%;
@@ -298,24 +290,20 @@ header{
   display: flex;
   flex-direction: column;
 }
-
 .course-pic-container{
   width: 100%;
   height: auto;
 }
-
 .course-text-container{
   width: 85%;
   justify-content: flex-start;
   margin: 16px 0px 24px 16px;
 }
-
 .course-text-container h3{
   width: 75%;
   justify-content: flex-start;
   margin-bottom: 8px;
 }
-
 .course-detail {
   color: rgb(118, 118, 118);
   line-height: 1.3;
@@ -323,6 +311,7 @@ header{
 }
 
 /*------------ Fourth Content Section ------------*/
+
 
 #section-4 .site-container .feature-container{
   width: 60%;
@@ -336,20 +325,19 @@ header{
 #section-4 h3{
   margin: 24px 0px 8px 0px;
 }
-
+#section-4 .entry-detail {
+  padding-bottom: 16px;
+}
 #section-4 .entry-detail, #section-4 .quote {
   color: rgb(118,118,118);
 }
-
 #section-4 .site-container .selection-container{
   border: none;
   margin-top: 32px
 }
-
 #section-4 .site-container .selection-container .entry-container {
   border: none;
 }
-
 #section-4 .site-container .selection-container .entry-container:first-child {
   background-color: rgb(216, 216, 216);
 }
@@ -364,13 +352,11 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
 }
-
 .copyright {
   color: rgb(118,118,118);
   margin: 16px 0px 64px 24px;
   line-height: 1.5;
 }
-
 .legal-menu{
   display: inline-block;
   margin: 16px 24px 64px 0px;
@@ -379,4 +365,170 @@ footer {
   color: rgb(118,118,118);
   padding-left: 8px;
   line-height: 1.5;
+}
+
+/*** MOBILE SCREEN ***/
+/* 780px Max Width to accomodate for Apple iPad, see http://www.javascriptkit.com/dhtmltutors/cssmediaqueries2.shtml */
+
+@media only screen and (max-width: 780px){
+
+  /*------------ Header Section ------------*/
+
+  .header-left{
+    display: none;
+  }
+  .header-right{
+    width: 100%;
+  }
+  .nav-entry{
+      display:none;
+  }
+  .nav-icon{
+      display: inline-block;
+  }
+  .site-container{
+    min-width: 250px;
+  }
+
+  /*------------ First Section ------------*/
+
+  #section-1 .site-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+  .lg-image-container {
+    width: 100%;
+    height: auto;
+    margin: 0px 0px 32px 0px;
+  }
+  #section-1 .site-container .side-container {
+    width: 100%;
+    margin: 0px 16px 32px 16px;
+  }
+  .side-container h1 {
+    width: 100%;
+  }
+  .side-container h3 {
+    margin: 24px 0px;
+    width: 100%;
+  }
+  .side-container .button-text{
+    width: 100%;
+    margin-right: 16px;
+  }
+
+  /*------------ Second Section ------------*/
+
+  #section-2 .site-container .feature-container {
+    display: none;
+  }
+  #section-2 .selection-container{
+    width: 100%;
+    margin: 16px 0px 16px 0px;
+    border: none;
+  }
+  #section-2 .selection-container .entry-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(255,255,255);
+    border: none;
+    padding-right: 0px;
+  }
+  #section-2 .entry-text-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: none;
+    background-color: rgb(255,255,255);
+    padding-right: 0px;
+    padding-left: 32px;
+  }
+  #section-2 .entry-pic-container{
+    width: 100%;
+    margin: 16px 16px 0px 0px;
+  }
+  #section-2 .mobile-pic{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  #section-2 .standard-pic{
+    display: none;
+  }
+    /*------------ Third Section ------------*/
+
+    #section-3{
+      background-color: rgb(255, 255, 255);
+    }
+    #section-3 .site-container {
+      border: 2px solid rgb(224, 224, 224);
+      padding: 0px 16px;
+      margin: 0px auto 32px auto;
+      background-color: rgb(255, 255, 255);
+    }
+    #section-3 .all-course-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+      margin-bottom: 32px;
+    }
+    .course-pic-container {
+      display: none;
+    }
+    .course-text-container {
+      margin: 0px;
+    }
+    .course-text-container h3{
+      padding: 16px 16px 16px 24px;
+      margin: 0px;
+    }
+    .course-detail {
+      display: none;
+    }
+    .course-container{
+      background-color: rgb(216, 216, 216);
+      width: 100%;
+      height: auto;
+      margin: 4px;
+    }
+
+    /*------------ Fourth Section ------------*/
+    #section-4 .selection-container{
+      display: none;
+    }
+    #section-4 .site-container{
+      width: 100%;
+      padding: 0px;
+    }
+    #section-4 .site-container .feature-container{
+      width: 100%;
+      margin: 32px 0px 0px 0px;
+    }
+    #section-4 .feature-container h3{
+      display: none;
+    }
+    #section-4 .feature-container p{
+      display: none;
+    }
+    /*------------ Footer Section ------------*/
+    footer {
+      margin-top: 0px;
+      border: none;
+    }
+    .legal-text {
+      display: none;
+    }
+    .copyright{
+      padding: 40px 0px 16px 0px;
+    }
 }
