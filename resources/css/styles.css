@@ -106,11 +106,6 @@ video {
   display: flex;
   position: static;
 }
-.section-background:nth-child(2n+1){
-  background-color: rgb(255, 255, 255);
-  width: 100%;
-  display: flex;
-}
 .site-container {
   width:1200px;
   min-width: 690px;
@@ -236,7 +231,9 @@ header{
 }
 
 /*------------ Second Content Section ------------*/
-
+#section-2{
+background-color: rgb(255, 255, 255);
+}
 #section-2 .site-container .feature-container{
   width: 60%;
   height: auto;
@@ -312,6 +309,18 @@ header{
 
 /*------------ Fourth Content Section ------------*/
 
+#section-4-title .site-container{
+background-color: rgb(255, 255, 255);
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 32px;
+}
+
+#section-4{
+background-color: rgb(255, 255, 255);
+}
 
 #section-4 .site-container .feature-container{
   width: 60%;
@@ -403,19 +412,18 @@ footer {
     margin: 0px 0px 32px 0px;
   }
   #section-1 .site-container .side-container {
-    width: 100%;
+    width: auto;
     margin: 0px 16px 32px 16px;
+    padding: 0px;
   }
   .side-container h1 {
     width: 100%;
   }
   .side-container h3 {
-    margin: 24px 0px;
     width: 100%;
   }
   .side-container .button-text{
     width: 100%;
-    margin-right: 16px;
   }
 
   /*------------ Second Section ------------*/
@@ -430,14 +438,11 @@ footer {
   }
   #section-2 .selection-container .entry-container{
     width: 100%;
-    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: rgb(255,255,255);
     border: none;
-    padding-right: 0px;
   }
   #section-2 .entry-text-container{
     width: 100%;
@@ -447,9 +452,10 @@ footer {
     justify-content: flex-start;
     align-items: flex-start;
     border: none;
-    background-color: rgb(255,255,255);
-    padding-right: 0px;
     padding-left: 32px;
+  }
+  #section-2 .site-container .selection-container .entry-container:last-child {
+    background-color: rgb(255,255,255);
   }
   #section-2 .entry-pic-container{
     width: 100%;
@@ -471,7 +477,7 @@ footer {
     #section-3 .site-container {
       border: 2px solid rgb(224, 224, 224);
       padding: 0px 16px;
-      margin: 0px auto 32px auto;
+      margin: 0px auto 0px auto;
       background-color: rgb(255, 255, 255);
     }
     #section-3 .all-course-container {
@@ -500,6 +506,9 @@ footer {
       width: 100%;
       height: auto;
       margin: 4px;
+    }
+    .read-more {
+      margin-top: 8px;
     }
 
     /*------------ Fourth Section ------------*/
